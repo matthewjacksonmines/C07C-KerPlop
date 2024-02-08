@@ -45,8 +45,8 @@ public class LevelSetup {
     	movingPieces.add(knight1);
     	interactingPieces.add(knight1);
     	
-    	KnightPiece knight2 = new KnightPiece(2);
-    	gameBoard[2] = knight2;
+    	KnightPiece knight2 = new KnightPiece(3);
+    	gameBoard[3] = knight2;
     	movingPieces.add(knight2);
     	interactingPieces.add(knight2);
     	
@@ -67,6 +67,41 @@ public class LevelSetup {
 
     private void setupLevel2() {
         // Setup for level 2
+    	playerStartLoc = 18;
+    	
+    	Wall wall1 = new Wall(3);
+    	gameBoard[3] = wall1;
+    	interactingPieces.add(wall1);
+    	
+    	Wall wall2 = new Wall(6);
+    	gameBoard[6] = wall2;
+    	interactingPieces.add(wall2);
+
+    	LaserPiece laser = new LaserPiece(1);
+    	gameBoard[1] = laser;
+    	interactingPieces.add(laser);
+    	
+    	Statue regStat1 = new Statue(7);
+    	gameBoard[11] = regStat1;
+    	interactingPieces.add(regStat1);
+    	
+    	Frog frog1 = new Frog(10);
+    	gameBoard[10] = frog1;
+    	interactingPieces.add(frog1);
+    	
+    	Frog frog2 = new Frog(12);
+    	gameBoard[12] = frog2;
+    	interactingPieces.add(frog2);
+    	
+    	Statue regStat2 = new Statue(15);
+    	gameBoard[15] = regStat2;
+    	interactingPieces.add(regStat2);
+    	
+    	SuspiciousStatue susStat = new SuspiciousStatue(20);
+    	gameBoard[20] = susStat;
+    	movingPieces.add(susStat);
+    	interactingPieces.add(susStat);
+    	
     }
 
     // Utility method to clear the game board and reset piece lists

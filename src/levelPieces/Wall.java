@@ -2,31 +2,29 @@ package levelPieces;
 
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
+import gameEngine.Moveable;
 
-public class Statue extends GamePiece {
-	
+public class Wall extends GamePiece { // Shield piece cannot move, thus, does not implement Moveable
 	private boolean isActive = true;
 
-    public Statue(int location) {
-    	super('S', "Normal Statue", location); // Setup statue as Normal Statue with character representation: 'S'
+    public Wall(int location) {
+    	super('W', "Wall", location);
     }
 
     @Override
     public void draw() {
-        System.out.print("S"); // Represent the Statue with a character
+        System.out.print("W"); // Represent the Wall with a character
     }
-
+    
+    @Override
     public InteractionResult interact(Drawable [] gameBoard, int playerLocation) {
     	if (isActive && this.getLocation() == playerLocation) {
-            System.out.println("You've encountered a Statue. It doesn't move, but it's quite majestic. (+1 point)");
+            System.out.println("You destroyed a wall.");
             gameBoard[this.getLocation()] = null;
 //            Attempts to remove the piece from the game. 
 //            This is not possible many other ways given how the GameEngine and LevelSetup are coded.
             isActive = false; 
-            return InteractionResult.GET_POINT; // Example of interaction result
-    	} else {
-    		return InteractionResult.NONE;
     	}
-    	
+		return InteractionResult.NONE;
     }
 }

@@ -31,8 +31,8 @@ public class SuspiciousStatue extends GamePiece implements Moveable {
             if (newLocation >= 0 && newLocation < gameBoard.length && gameBoard[newLocation] == null) {
                 // Move the knight to the new location
                 gameBoard[this.getLocation()] = null; // Clear the old location
-                this.setLocation(newLocation); // Update the knight's location
-                gameBoard[newLocation] = this; // Place the knight at the new location
+                this.setLocation(newLocation); // Update the location
+                gameBoard[newLocation] = this; // Place at new location
             }
         }
     	playerLastPos = playerLocation;

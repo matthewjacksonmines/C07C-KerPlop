@@ -4,7 +4,7 @@ import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 import gameEngine.Moveable;
 
-public class KnightPiece extends GamePiece implements Drawable, Moveable {
+public class KnightPiece extends GamePiece implements Moveable {
 
     public KnightPiece(int location) {
     	super('K', "Knight", location); // Setup GamePiece as 'Knight' with symbol 'K'
