@@ -11,6 +11,6 @@ public class WaterBottle implements Drawable {
 
     @Override
     public void draw() {
-        System.out.println("B"); // Represent the Bottle with a simple character for console-based display
+        System.out.print("B"); // Represent the Bottle with a simple character for console-based display
     }
 }

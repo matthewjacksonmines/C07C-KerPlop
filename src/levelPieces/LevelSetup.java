@@ -35,6 +35,34 @@ public class LevelSetup {
         // This should include initializing game pieces, placing them on the game board,
         // and determining player's starting location.
         // Remember to add pieces to movingPieces and interactingPieces as appropriate.
+    	playerStartLoc = 6;
+    	
+    	WaterBottle bottle = new WaterBottle(0);
+    	gameBoard[0] = bottle;
+    	
+    	KnightPiece knight1 = new KnightPiece(1);
+    	gameBoard[1] = knight1;
+    	movingPieces.add(knight1);
+    	interactingPieces.add(knight1);
+    	
+    	KnightPiece knight2 = new KnightPiece(2);
+    	gameBoard[2] = knight2;
+    	movingPieces.add(knight2);
+    	interactingPieces.add(knight2);
+    	
+    	Statue regStat1 = new Statue(12);
+    	gameBoard[12] = regStat1;
+    	interactingPieces.add(regStat1);
+    	
+    	SuspiciousStatue susStat = new SuspiciousStatue(15);
+    	gameBoard[15] = susStat;
+    	movingPieces.add(susStat);
+    	interactingPieces.add(susStat);
+    	
+    	Statue regStat2 = new Statue(18);
+    	gameBoard[18] = regStat2;
+    	interactingPieces.add(regStat2);
+    	
     }
 
     private void setupLevel2() {
