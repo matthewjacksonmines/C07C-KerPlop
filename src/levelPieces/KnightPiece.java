@@ -31,7 +31,6 @@ public class KnightPiece extends GamePiece implements Moveable {
             this.setLocation(newLocation); // Update the knight's location
             gameBoard[newLocation] = this; // Place the knight at the new location
         }
-        // Additional logic could be implemented to handle interactions or more sophisticated movement
     }
     
     @Override

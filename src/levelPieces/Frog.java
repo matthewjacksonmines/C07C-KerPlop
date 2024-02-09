@@ -37,6 +37,6 @@ public class Frog extends GamePiece { // Frog moves only through interaction, th
     		}
     	}
     	playerLastPos = playerLocation;
-		return InteractionResult.NONE;
+		return InteractionResult.ADVANCE;
     }
 }

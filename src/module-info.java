@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Kerplop {
+module KerPlop {
 }
