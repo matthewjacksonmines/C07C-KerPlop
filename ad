@@ -1,0 +1,47 @@
+[33mcommit 564ecf53c7c556db2efe390969a635810861e3a5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: sbangapadang22 <sbangapadang@mines.edu>
+Date:   Fri Feb 9 18:59:22 2024 -0700
+
+    testinteractions done
+
+[33mcommit cf4b5ddb4846c3424a14109917c8bd090da4a741[m
+Author: sbangapadang22 <sbangapadang@mines.edu>
+Date:   Fri Feb 9 18:47:04 2024 -0700
+
+    testinteractions setup + frog, wall, knight interaction tests
+
+[33mcommit 26cae3ebe26521c4f97650ab3a82783a7a2d79e9[m
+Author: sbangapadang22 <sbangapadang@mines.edu>
+Date:   Thu Feb 8 17:17:35 2024 -0700
+
+    final complete with UML + readme
+
+[33mcommit 52923d576ac0275d6f4225a5fb59d1762a079447[m
+Author: matthewjacksonmines <matthewjackson@mines.edu>
+Date:   Thu Feb 8 15:21:14 2024 -0700
+
+    Added remaining classes. Populated 2 Levels
+
+[33mcommit 4dbad6b9c54d3b3783db9864a1a0f7f67351a518[m
+Author: matthewjacksonmines <matthewjackson@mines.edu>
+Date:   Thu Feb 8 00:08:01 2024 -0700
+
+    First Level Functional, Added new piece
+
+[33mcommit a84b5245a5f3f29f87a9b0d3256b132f61a42365[m
+Author: sbangapadang <sbangapadang22@gmail.com>
+Date:   Tue Feb 6 21:43:57 2024 -0700
+
+    setup + 3 objects
+
+[33mcommit 8d0986e000249fe1cf7ce41609dfb90e4bbbaa06[m
+Author: matthewjacksonmines <matthewjackson@mines.edu>
+Date:   Fri Feb 2 14:07:38 2024 -0700
+
+    initial commit
+
+[33mcommit 0ce58a48b1f7720dee5c1139930348a8fa3e2b44[m
+Author: matthewjacksonmines <matthewjackson@mines.edu>
+Date:   Fri Feb 2 14:04:49 2024 -0700
+
+    initial setup

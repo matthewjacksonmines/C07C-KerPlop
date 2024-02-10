@@ -46,7 +46,7 @@ public class TestInteractions {
         assertEquals(InteractionResult.HIT, result, "Knight should hit the player when on the same square.");
     }
 
-    // Test the interaction with a Wall, which should always result in no interaction
+    // Test the interaction with a Wall, which should always result in NONE interaction
     @Test
     public void testWallInteraction() {
         Wall wall = new Wall(player.getLocation() + 1); // Wall is placed next to the player
