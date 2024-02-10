@@ -35,7 +35,11 @@ class TestMovingPieces {
         for (int moveDir = -1; moveDir <= 1; moveDir++) {
         	// for each possible move, test MAX of 1000 times to see if the knight is able to move in that direction
         	for (int i = 0; i < 1000 && !outcomeAchieved; i++) {
+        		// reset the knights position
+        		gameBoard[knight.getLocation()] = null;
                 gameBoard[initialPos] = knight;
+                knight.setLocation(initialPos);
+                
                 knight.move(gameBoard, player.getLocation());
                 moveDelta = knight.getLocation() - initialPos;
                 if (moveDelta == moveDir) {

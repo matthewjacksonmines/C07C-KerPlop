@@ -28,8 +28,8 @@ public class SuspiciousStatue extends GamePiece implements Moveable {
         		newLocation = this.getLocation();
         	}
             // Check if the new location is valid (not out of bounds and not occupied)
-            if (newLocation >= 0 && newLocation < gameBoard.length && gameBoard[newLocation] == null) {
-                // Move the knight to the new location
+            if (newLocation >= 0 && newLocation < gameBoard.length && gameBoard[newLocation] == null && newLocation != playerLocation) {
+                // Move the statue to the new location
                 gameBoard[this.getLocation()] = null; // Clear the old location
                 this.setLocation(newLocation); // Update the location
                 gameBoard[newLocation] = this; // Place at new location
