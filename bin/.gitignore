@@ -1,4 +1,2 @@
 /levelPieces/
-/.gitignore
-/gameEngine/
-/module-info.class
+/tests/

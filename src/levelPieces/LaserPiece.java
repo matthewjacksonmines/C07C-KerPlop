@@ -1,4 +1,4 @@
-<KL>package levelPieces;
+package levelPieces;
 
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
